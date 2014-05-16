@@ -66,9 +66,16 @@
 
 		<mysql.version>5.1.22</mysql.version>
 
+		<stagemonitor.version>0.13.0</stagemonitor.version>
+
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.stagemonitor</groupId>
+			<artifactId>stagemonitor-web</artifactId>
+			<version>${stagemonitor.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.core</artifactId>
