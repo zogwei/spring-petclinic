@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.web;
 
+import com.codahale.metrics.annotation.ExceptionMetered;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,6 +32,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class CrashController {
 
     @RequestMapping(value = "/oups", method = RequestMethod.GET)
+	@ExceptionMetered
     public String triggerException() {
         throw new RuntimeException("Expected: controller used to showcase what " +
                 "happens when an exception is thrown");
