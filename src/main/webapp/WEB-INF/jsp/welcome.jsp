@@ -16,6 +16,12 @@
     <img src="${petsImage}"/>
 
     <jsp:include page="fragments/footer.jsp"/>
+	<button onclick="ajax()">Ajax</button>
+	<script>
+		function ajax() {
+			$.get("owners.html?lastName=");
+		}
+	</script>
 
 </div>
 </body>
