@@ -7,13 +7,14 @@
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
-## Running petclinic locally
+## Running petclinic locally with stagemonitor enabled
 ```
-	git clone https://github.com/SpringSource/spring-petclinic.git
-	mvn tomcat7:run
+git clone https://github.com/stagemonitor/spring-petclinic.git
+cd spring-petclinic
+mvn tomcat7:run
 ```
 
-You can then access petclinic here: http://localhost:9966/petclinic/
+You can then access petclinic here: [http://localhost:9966/petclinic/]()
 
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/SpringSource/spring-petclinic/issues
